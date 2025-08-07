@@ -21,7 +21,7 @@
     <a href="index.html" style="text-decoration: none; color: inherit">
       Getty<span
         style="
-          background-color: #0dba8f;
+          background-color: #b2aa0a;
           border-radius: 20px;
           padding-left: 10px;
           padding-right: 10px;
@@ -55,7 +55,7 @@
               flex-direction: column;
               border-radius: 8px;
               padding: 1em 2em;
-              background: #053b2d;
+              background: #333103;
               overflow: hidden;
             "
           >
@@ -66,7 +66,7 @@
             <a class="btn-link">
               <button
                 style="
-                  background-color: #0dba8f;
+                  background-color: #b2aa0a;
                   border-radius: 6px;
                   width: 245px;
                   height: 41px;
@@ -83,7 +83,7 @@
               </button>
             </a>
             <div data-captcha-enable="true" class="recaptcha" style="display: none; margin-bottom: 1em"></div>
-            <div style="color: #fff">
+            <div style="color: #fff" data-translate="downloadBenefits">
               Download updated Silkroad Origin Mobile Mod Apk to:
               <ul>
                 <li>unlock all levels,</li>
@@ -94,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div style="width: 100%">
+        <div style="width: 100%" data-translate="steps">
           <p style="padding: 0em 2em; margin: 0">
             To download the file you will need to complete three simple steps. <br />
             1. Click the Download button.<br />
@@ -181,6 +181,69 @@ a:hover {
   document.querySelector(".btn-link").style.display = "none";
   document.querySelector(".recaptcha").style.display = "block";
 }
+
+class TextTranslator {
+  constructor(translations) {
+    this.translations = translations;
+    this.lang = (navigator.language || "en").split("-")[0];
+  }
+
+  translatePage() {
+    console.log(`Translating page to ${this.lang}`);
+    const langData = this.translations[this.lang];
+    if (!langData) return;
+    console.log(`Translating page to ${this.lang}`);
+
+    for (let key in langData) {
+      const element = document.querySelector(`[data-translate="${key}"]`);
+      if (element) {
+        element.innerHTML = langData[key];
+      }
+    }
+  }
+}
+
+const translations = {
+  pt: {
+    downloadBenefits: `<p>Baixe o arquivo Mod Apk atualizado para:</p>
+<ul><li>desbloquear todos os níveis,</li>
+<li>ganhar dinheiro ilimitado,</li>
+<li>obter recursos infinitos,</li>
+<li>remover anúncios.</li>
+</ul>`,
+    steps: `<p>Para baixar o arquivo você precisará completar três passos simples.</p>
+<ol><li>Clique no botão Download.</li>
+<li>Complete as ações necessárias.</li>
+<li>Instale o aplicativo no seu telefone.</li></ol>`,
+  },
+  id: {
+    downloadBenefits: `<p>Unduh file Mod Apk terbaru untuk:</p>
+<ul><li>membuka semua level,</li>
+<li>mendapatkan uang tak terbatas,</li>
+<li>mendapatkan sumber daya tak terbatas,</li>
+<li>menghapus iklan.</li>
+</ul>`,
+    steps: `<p>Untuk mengunduh file Anda perlu menyelesaikan tiga langkah sederhana.</p>
+<ol><li>Klik tombol Download.</li>
+<li>Selesaikan tindakan yang diperlukan.</li>
+<li>Instal aplikasi di ponsel Anda.</li></ol>`,
+  },
+  hi: {
+    downloadBenefits: `<p>अपडेटेड Mod Apk फ़ाइल डाउनलोड करें:</p>
+<ul><li>सभी स्तर अनलॉक करें,</li>
+<li>असीमित पैसा पाएं,</li>
+<li>अनंत संसाधन प्राप्त करें,</li>
+<li>विज्ञापन हटाएं।</li>
+</ul>`,
+    steps: `<p>फ़ाइल डाउनलोड करने के लिए आपको तीन सरल चरण पूरे करने होंगे।</p>
+<ol><li>डाउनलोड बटन पर क्लिक करें।</li>
+<li>आवश्यक कार्य पूरे करें।</li>
+<li>अपने फोन पर एप्लिकेशन इंस्टॉल करें।</li></ol>`,
+  },
+};
+
+const textTranslator = new TextTranslator(translations);
+textTranslator.translatePage();
 </script>
   </body>
 </html>
