@@ -21,7 +21,7 @@
     <a href="index.html" style="text-decoration: none; color: inherit">
       Getty<span
         style="
-          background-color: #8fba03;
+          background-color: #0d93c4;
           border-radius: 20px;
           padding-left: 10px;
           padding-right: 10px;
@@ -55,7 +55,7 @@
               flex-direction: column;
               border-radius: 8px;
               padding: 1em 2em;
-              background: #2d3b00;
+              background: #053445;
               overflow: hidden;
             "
           >
@@ -66,7 +66,7 @@
             <a class="btn-link">
               <button
                 style="
-                  background-color: #8fba03;
+                  background-color: #0d93c4;
                   border-radius: 6px;
                   width: 245px;
                   height: 41px;
@@ -78,6 +78,7 @@
                   border: none;
                 "
                 onclick="btn_link_activate();"
+                data-translate="downloadButton"
               >
                 Download
               </button>
@@ -94,13 +95,244 @@
             </div>
           </div>
         </div>
-        <div style="width: 100%" data-translate="steps">
-          <p style="padding: 0em 2em; margin: 0">
-            To download the file you will need to complete three simple steps. <br />
-            1. Click the Download button.<br />
-            2. Complete required actions.<br />
-            3. Install the application on your phone.
-          </p>
+        <div style="width: 100%">
+          <div
+            style="
+              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+              border-radius: 12px;
+              padding: 25px;
+              color: white;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <h3
+              data-translate="h3DownloadInstruction"
+              style="margin: 0 0 20px 0; text-align: center; font-size: 22px; font-weight: 600"
+            >
+              📋 Download Instruction
+            </h3>
+
+            <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 20px; backdrop-filter: blur(10px)">
+              <p data-translate="instructionSteps" ="margin: 0 0 15px 0; font-size: 16px; line-height: 1.6">
+                To download the file you will need to complete three simple steps:
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 12px">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    background: rgba(255, 255, 255, 0.15);
+                    border-radius: 6px;
+                    padding: 12px;
+                  "
+                >
+                  <span
+                    style="
+                      background: #28a745;
+                      color: white;
+                      border-radius: 50%;
+                      width: 24px;
+                      height: 24px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      font-weight: bold;
+                      margin-right: 12px;
+                      font-size: 14px;
+                    "
+                    >1</span
+                  >
+                  <span data-translate="instructionClick">Click the Download button</span>
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    background: rgba(255, 255, 255, 0.15);
+                    border-radius: 6px;
+                    padding: 12px;
+                  "
+                >
+                  <span
+                    style="
+                      background: #007bff;
+                      color: white;
+                      border-radius: 50%;
+                      width: 24px;
+                      height: 24px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      font-weight: bold;
+                      margin-right: 12px;
+                      font-size: 14px;
+                    "
+                    >2</span
+                  >
+                  <span data-translate="instructionComplete">Complete required actions</span>
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    background: rgba(255, 255, 255, 0.15);
+                    border-radius: 6px;
+                    padding: 12px;
+                  "
+                >
+                  <span
+                    style="
+                      background: #ffc107;
+                      color: white;
+                      border-radius: 50%;
+                      width: 24px;
+                      height: 24px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      font-weight: bold;
+                      margin-right: 12px;
+                      font-size: 14px;
+                    "
+                    >3</span
+                  >
+                  <span data-translate="instructionInstall">Install the application on your phone</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="
+                margin: 20px auto;
+                background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+                border-radius: 12px;
+                padding: 25px;
+                color: white;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                max-width: 600px;
+              "
+            >
+              <h3
+                data-translate="h3videoInstruction"
+                style="margin: 0 0 20px 0; text-align: center; font-size: 22px; font-weight: 600"
+              >
+                🎥 Video Tutorial
+              </h3>
+
+              <div
+                style="
+                  background: rgba(255, 255, 255, 0.1);
+                  border-radius: 8px;
+                  padding: 20px;
+                  backdrop-filter: blur(10px);
+                  text-align: center;
+                "
+              >
+                <video controls style="width: 100%; max-width: 100%; border-radius: 8px; margin-bottom: 15px">
+                  <source src="./how-to-download-en.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
+                <p data-translate="videoInstruction" style="margin: 0; font-size: 16px; line-height: 1.6">
+                  Watch our step-by-step video guide to learn how to download and install the mod APK safely.
+                </p>
+              </div>
+            </div>
+
+            <div
+              style="
+                margin: 20px auto;
+                background: #f8f9fa;
+                border-radius: 12px;
+                padding: 20px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                max-width: 600px;
+              "
+            >
+              <h3
+                data-translate="h3Reviews"
+                style="text-align: center; margin: 0 0 15px 0; color: #333; font-size: 18px; font-weight: 600"
+              >
+                Recent User Reviews
+              </h3>
+
+              <div
+                style="
+                  background: white;
+                  border-radius: 8px;
+                  padding: 12px 16px;
+                  margin: 8px 0;
+                  border-left: 4px solid #28a745;
+                  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <span style="color: #28a745; font-weight: 600">💬 @Yuristhik:</span>
+                <span style="color: #555" data-translate="commentWorked">worked for me. just wait 1 min</span>
+              </div>
+
+              <div
+                style="
+                  background: white;
+                  border-radius: 8px;
+                  padding: 12px 16px;
+                  margin: 8px 0;
+                  border-left: 4px solid #007bff;
+                  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <span style="color: #007bff; font-weight: 600">💬 @MetaCrush:</span>
+                <span style="color: #555" data-translate="commentUnlocked">it unlocked after app download, ty</span>
+              </div>
+
+              <div
+                style="
+                  background: white;
+                  border-radius: 8px;
+                  padding: 12px 16px;
+                  margin: 8px 0;
+                  border-left: 4px solid #ffc107;
+                  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <span style="color: #e67e22; font-weight: 600">💬 @Ravem123:</span>
+                <span data-translate="commentSus" style="color: #555">was sus at first but real apk</span>
+              </div>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 20px">
+              <h3 style="margin: 0 0 20px 0; text-align: center; font-size: 22px; font-weight: 600" data-translate="h3AboutMod">
+                ✨ About This Mod
+              </h3>
+
+              <div>
+                <p data-translate="modDevelopers" style="margin: 0 0 15px 0; font-size: 16px; line-height: 1.8">
+                  For ease, developers have introduced a Mod version that allows everything to be unlimited. What do you need to
+                  spend money when everything you want is for free?
+                </p>
+
+                <p></p>
+                <p data-translate="modResources">
+                  Choose from the variety of resources to experience fun. Unlocked all features allowing to use unlimited
+                  resources, which we get in the Mod version.
+                </p>
+
+                <p data-translate="modVersion" style="margin: 0; font-size: 16px; line-height: 1.8">
+                  The Mod version works properly without ads and bans. You won't have to endure annoying ads to get resources or
+                  in-app purchases.
+                </p>
+                <p data-translate="modPurposes">
+                  This updated Mod Apk offers limitless money that players can use for several purposes.
+                </p>
+                <p data-translate="modFeatures">
+                  Developers have worked deeply on antiban and no-ads features. Additionally, no root is needed to run the Mod
+                  version on devices.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -205,48 +437,118 @@ class TextTranslator {
 
 const translations = {
   pt: {
+    h3AboutMod: "Sobre este Mod",
     downloadBenefits: `<p>Baixe o arquivo Mod Apk atualizado para:</p>
 <ul><li>desbloquear todos os níveis,</li>
 <li>ganhar dinheiro ilimitado,</li>
 <li>obter recursos infinitos,</li>
 <li>remover anúncios.</li>
 </ul>`,
-    steps: `<p>Para baixar o arquivo você precisará completar três passos simples.</p>
-<ol><li>Clique no botão Download.</li>
-<li>Complete as ações necessárias.</li>
-<li>Instale o aplicativo no seu telefone.</li></ol>`,
+    modDevelopers:
+      "Para facilitar, os desenvolvedores introduziram uma versão Mod que permite que tudo seja ilimitado. Por que você precisa gastar dinheiro quando tudo que você quer é grátis?",
+    modResources:
+      "Escolha entre a variedade de recursos para experimentar diversão. Desbloqueou todos os recursos permitindo usar recursos ilimitados, que obtemos na versão Mod.",
+
+    modVersion:
+      "A versão Mod funciona corretamente sem anúncios e banimentos. Você não terá que suportar anúncios irritantes para obter recursos ou compras no aplicativo.",
+    modPurposes: "Este Mod Apk atualizado oferece dinheiro ilimitado que os jogadores podem usar para vários propósitos.",
+    modFeatures:
+      "Os desenvolvedores trabalharam profundamente nos recursos anti-banimento e sem anúncios. Além disso, não é necessário root para executar a versão Mod nos dispositivos.",
+    commentSus: "estava desconfiado no início, mas é um apk real",
+    commentUnlocked: "desbloqueou após o download do app, obrigado",
+    commentWorked: "funcionou para mim. apenas espere 1 minuto",
+    h3Reviews: "Avaliações Recentes dos Usuários",
+    videoInstruction:
+      "Assista ao nosso guia em vídeo passo a passo para aprender como baixar e instalar o mod APK com segurança.",
+    h3videoInstruction: "Tutorial em Vídeo",
+    instructionInstall: "Instale o aplicativo no seu telefone",
+    instructionComplete: "Complete as ações necessárias",
+    instructionClick: "Clique no botão Download",
+    instructionSteps: "Para baixar o arquivo você precisará completar três passos simples:",
+    h3DownloadInstruction: "Instruções de Download",
+    downloadButton: "Baixar",
   },
   id: {
+    h3AboutMod: "Tentang Mod ini",
     downloadBenefits: `<p>Unduh file Mod Apk terbaru untuk:</p>
 <ul><li>membuka semua level,</li>
 <li>mendapatkan uang tak terbatas,</li>
 <li>mendapatkan sumber daya tak terbatas,</li>
 <li>menghapus iklan.</li>
 </ul>`,
-    steps: `<p>Untuk mengunduh file Anda perlu menyelesaikan tiga langkah sederhana.</p>
-<ol><li>Klik tombol Download.</li>
-<li>Selesaikan tindakan yang diperlukan.</li>
-<li>Instal aplikasi di ponsel Anda.</li></ol>`,
+    modDevelopers:
+      "Untuk kemudahan, pengembang telah memperkenalkan versi Mod yang memungkinkan semuanya menjadi tidak terbatas. Untuk apa Anda perlu mengeluarkan uang ketika semua yang Anda inginkan gratis?",
+
+    modResources:
+      "Pilih dari berbagai sumber daya untuk merasakan kesenangan. Membuka semua fitur yang memungkinkan untuk menggunakan sumber daya tak terbatas, yang kita dapatkan dalam versi Mod.",
+
+    modVersion:
+      "Versi Mod bekerja dengan baik tanpa iklan dan larangan. Anda tidak perlu menanggung iklan yang mengganggu untuk mendapatkan sumber daya atau pembelian dalam aplikasi.",
+
+    modPurposes: "Mod Apk yang diperbarui ini menawarkan uang tak terbatas yang dapat digunakan pemain untuk berbagai tujuan.",
+    modFeatures:
+      "Pengembang telah bekerja keras pada fitur anti-ban dan tanpa iklan. Selain itu, tidak diperlukan root untuk menjalankan versi Mod pada perangkat.",
+    commentSus: "awalnya curiga tapi apk asli",
+    commentUnlocked: "terbuka setelah download app, terima kasih",
+    commentWorked: "berhasil untuk saya. tunggu saja 1 menit",
+    h3Reviews: "Ulasan Pengguna Terbaru",
+    videoInstruction:
+      "Tonton panduan video langkah demi langkah kami untuk mempelajari cara mengunduh dan menginstal mod APK dengan aman.",
+    h3videoInstruction: "Tutorial Video",
+    instructionInstall: "Instal aplikasi di ponsel Anda",
+    instructionComplete: "Selesaikan tindakan yang diperlukan",
+    instructionClick: "Klik tombol Download",
+    instructionSteps: "Untuk mengunduh file Anda perlu menyelesaikan tiga langkah sederhana:",
+    h3DownloadInstruction: "Instruksi Download",
+    downloadButton: "Download",
   },
   hi: {
+    h3AboutMod: "इस Mod के बारे में",
     downloadBenefits: `<p>अपडेटेड Mod Apk फ़ाइल डाउनलोड करें:</p>
 <ul><li>सभी स्तर अनलॉक करें,</li>
 <li>असीमित पैसा पाएं,</li>
 <li>अनंत संसाधन प्राप्त करें,</li>
 <li>विज्ञापन हटाएं।</li>
 </ul>`,
-    steps: `<p>फ़ाइल डाउनलोड करने के लिए आपको तीन सरल चरण पूरे करने होंगे।</p>
-<ol><li>डाउनलोड बटन पर क्लिक करें।</li>
-<li>आवश्यक कार्य पूरे करें।</li>
-<li>अपने फोन पर एप्लिकेशन इंस्टॉल करें।</li></ol>`,
+    modDevelopers:
+      "आसानी के लिए, डेवलपर्स ने एक Mod वर्जन पेश किया है जो सब कुछ असीमित बनाता है। जब आप जो चाहते हैं वह मुफ्त है तो पैसे खर्च करने की क्या जरूरत है?",
+
+    modResources:
+      "मज़े का अनुभव करने के लिए विभिन्न संसाधनों में से चुनें। सभी फीचर्स अनलॉक करके असीमित संसाधनों का उपयोग करने की अनुमति देता है, जो हमें Mod वर्जन में मिलता है।",
+
+    modVersion:
+      "Mod वर्जन बिना विज्ञापन और बैन के ठीक से काम करता है। आपको संसाधन या इन-ऐप खरीदारी के लिए परेशान करने वाले विज्ञापन सहन नहीं करने पड़ेंगे।",
+
+    modPurposes: "यह अपडेटेड Mod Apk असीमित पैसा प्रदान करता है जिसका उपयोग खिलाड़ी कई उद्देश्यों के लिए कर सकते हैं।",
+
+    modFeatures:
+      "डेवलपर्स ने एंटी-बैन और नो-एड्स फीचर्स पर गहराई से काम किया है। इसके अतिरिक्त, डिवाइस पर Mod वर्जन चलाने के लिए रूट की आवश्यकता नहीं है।",
+
+    commentSus: "पहले संदेह था लेकिन असली apk है",
+
+    commentUnlocked: "ऐप डाउनलोड के बाद अनलॉक हो गया, धन्यवाद",
+
+    commentWorked: "मेरे लिए काम किया। बस 1 मिनट इंतजार करें",
+
+    h3Reviews: "हाल की उपयोगकर्ता समीक्षाएं",
+
+    videoInstruction: "mod APK को सुरक्षित रूप से डाउनलोड और इंस्टॉल करने का तरीका जानने के लिए हमारी चरणबद्ध वीडियो गाइड देखें।",
+
+    h3videoInstruction: "वीडियो ट्यूटोरियल",
+
+    instructionInstall: "अपने फोन पर एप्लिकेशन इंस्टॉल करें",
+
+    instructionComplete: "आवश्यक कार्य पूरे करें",
+
+    instructionClick: "डाउनलोड बटन पर क्लिक करें",
+
+    instructionSteps: "फ़ाइल डाउनलोड करने के लिए आपको तीन सरल चरण पूरे करने होंगे:",
+
+    h3DownloadInstruction: "डाउनलोड निर्देश",
+    downloadButton: "डाउनलोड",
   },
   th: {
-    steps: `<p style="padding: 0em 2em; margin: 0">
-หากต้องการดาวน์โหลดไฟล์ คุณจะต้องทำตามขั้นตอนง่ายๆ สามขั้นตอน <br />
-1. คลิกปุ่มดาวน์โหลด<br />
-2. ทำการดำเนินการที่จำเป็นให้เสร็จสิ้น<br />
-3. ติดตั้งแอปพลิเคชันในโทรศัพท์ของคุณ
-  </p>`,
+    h3AboutMod: "เกี่ยวกับ Mod นี้",
     downloadBenefits: `ดาวน์โหลด Mod Apk เวอร์ชันอัปเดตเพื่อ:
 <ul>
 <li>ปลดล็อกทุกระดับ</li>
@@ -254,14 +556,46 @@ const translations = {
 <li>ได้ทรัพยากรไม่จำกัด</li>
 <li>ลบโฆษณา</li>
 </ul>`,
+    modDevelopers:
+      "เพื่อความสะดวก นักพัฒนาได้แนะนำเวอร์ชัน Mod ที่ทำให้ทุกอย่างไม่จำกัด ทำไมต้องเสียเงินเมื่อทุกสิ่งที่คุณต้องการฟรี?",
+
+    modResources:
+      "เลือกจากทรัพยากรที่หลากหลายเพื่อสัมผัสความสนุก ปลดล็อกฟีเจอร์ทั้งหมดให้ใช้ทรัพยากรไม่จำกัด ซึ่งเราได้รับในเวอร์ชัน Mod",
+
+    modVersion:
+      "เวอร์ชัน Mod ทำงานได้อย่างถูกต้องโดยไม่มีโฆษณาและการแบน คุณจะไม่ต้องทนกับโฆษณาที่น่ารำคาญเพื่อรับทรัพยากรหรือการซื้อในแอป",
+
+    modPurposes: "Mod Apk ที่อัปเดตนี้มีเงินไม่จำกัดที่ผู้เล่นสามารถใช้เพื่อวัตถุประสงค์หลายอย่าง",
+
+    modFeatures:
+      "นักพัฒนาได้ทำงานอย่างลึกซึ้งในฟีเจอร์ป้องกันการแบนและไม่มีโฆษณา นอกจากนี้ไม่จำเป็นต้องรูทเพื่อเรียกใช้เวอร์ชัน Mod บนอุปกรณ์",
+
+    commentSus: "ตอนแรกสงสัย แต่เป็น apk จริง",
+
+    commentUnlocked: "ปลดล็อกหลังจากดาวน์โหลดแอป ขอบคุณ",
+
+    commentWorked: "ใช้ได้กับฉัน แค่รอ 1 นาที",
+
+    h3Reviews: "รีวิวผู้ใช้ล่าสุด",
+
+    videoInstruction: "ดูคู่มือวิดีโอทีละขั้นตอนของเราเพื่อเรียนรู้วิธีดาวน์โหลดและติดตั้ง mod APK อย่างปลอดภัย",
+
+    h3videoInstruction: "วิดีโอสอน",
+
+    instructionInstall: "ติดตั้งแอปพลิเคชันในโทรศัพท์ของคุณ",
+
+    instructionComplete: "ทำการดำเนินการที่จำเป็นให้เสร็จสิ้น",
+
+    instructionClick: "คลิกปุ่มดาวน์โหลด",
+
+    instructionSteps: "หากต้องการดาวน์โหลดไฟล์ คุณจะต้องทำตามขั้นตอนง่ายๆ สามขั้นตอน:",
+
+    h3DownloadInstruction: "คำแนะนำการดาวน์โหลด",
+
+    downloadButton: "ดาวน์โหลด",
   },
   vi: {
-    steps: `<p style="padding: 0em 2em; margin: 0">
-Để tải xuống tệp, bạn cần hoàn thành ba bước đơn giản. <br />
-1. Nhấp vào nút Tải xuống.<br />
-2. Hoàn thành các hành động cần thiết.<br />
-3. Cài đặt ứng dụng trên điện thoại của bạn.
-</p>`,
+    h3AboutMod: "Về Mod này",
     downloadBenefits: `Tải xuống Mod Apk đã cập nhật để:
 <ul>
 <li>mở khóa tất cả các cấp độ,</li>
@@ -269,14 +603,47 @@ const translations = {
 <li>nhận tài nguyên vô hạn,</li>
 <li>loại bỏ quảng cáo.</li>
 </ul>`,
+    modDevelopers:
+      "Để dễ dàng, các nhà phát triển đã giới thiệu phiên bản Mod cho phép mọi thứ trở nên không giới hạn. Tại sao bạn cần phải tiêu tiền khi mọi thứ bạn muốn đều miễn phí?",
+
+    modResources:
+      "Chọn từ nhiều tài nguyên khác nhau để trải nghiệm niềm vui. Mở khóa tất cả các tính năng cho phép sử dụng tài nguyên không giới hạn, mà chúng ta có được trong phiên bản Mod.",
+
+    modVersion:
+      "Phiên bản Mod hoạt động bình thường mà không có quảng cáo và lệnh cấm. Bạn sẽ không phải chịu đựng những quảng cáo khó chịu để nhận tài nguyên hoặc mua hàng trong ứng dụng.",
+
+    modPurposes: "Mod Apk cập nhật này cung cấp tiền không giới hạn mà người chơi có thể sử dụng cho nhiều mục đích.",
+
+    modFeatures:
+      "Các nhà phát triển đã làm việc sâu sắc về các tính năng chống cấm và không quảng cáo. Ngoài ra, không cần root để chạy phiên bản Mod trên thiết bị.",
+
+    commentSus: "lúc đầu nghi ngờ nhưng là apk thật",
+
+    commentUnlocked: "nó đã mở khóa sau khi tải ứng dụng, cảm ơn",
+
+    commentWorked: "hoạt động với tôi. chỉ cần đợi 1 phút",
+
+    h3Reviews: "Đánh giá người dùng gần đây",
+
+    videoInstruction:
+      "Xem hướng dẫn video từng bước của chúng tôi để tìm hiểu cách tải xuống và cài đặt mod APK một cách an toàn.",
+
+    h3videoInstruction: "Hướng dẫn Video",
+
+    instructionInstall: "Cài đặt ứng dụng trên điện thoại của bạn",
+
+    instructionComplete: "Hoàn thành các hành động cần thiết",
+
+    instructionClick: "Nhấp vào nút Tải xuống",
+
+    instructionSteps: "Để tải xuống tệp, bạn cần hoàn thành ba bước đơn giản:",
+
+    h3DownloadInstruction: "Hướng dẫn Tải xuống",
+
+    downloadButton: "Tải xuống",
   },
   tl: {
-    steps: `<p style="padding: 0em 2em; margin: 0">
-Upang ma-download ang file kailangan mong kumpletuhin ang tatlong simpleng hakbang. <br />
-1. I-click ang Download button.<br />
-2. Kumpletuhin ang mga kinakailangang aksyon.<br />
-3. I-install ang application sa inyong phone.
-</p>`,
+    h3AboutMod: "Tungkol sa Mod na ito",
     downloadBenefits: `I-download ang updated na Mod Apk para sa:
 <ul>
 <li>ma-unlock ang lahat ng levels,</li>
@@ -284,14 +651,48 @@ Upang ma-download ang file kailangan mong kumpletuhin ang tatlong simpleng hakba
 <li>makakuha ng infinite na resources,</li>
 <li>ma-remove ang mga ads.</li>
 </ul>`,
+    modDevelopers:
+      "Para sa kadaling-dalihan, nagpakilala ang mga developer ng Mod version na nagpapahintulot sa lahat na maging unlimited. Bakit mo pa kailangan gumastos ng pera kung libre naman ang lahat ng gusto mo?",
+
+    modResources:
+      "Pumili mula sa iba't ibang resources para maranasan ang kasiyahan. Na-unlock ang lahat ng features na nagbibigay-daan sa paggamit ng unlimited resources, na nakukuha natin sa Mod version.",
+
+    modVersion:
+      "Ang Mod version ay gumagana nang maayos nang walang ads at bans. Hindi mo na kailangan tiisin ang nakakairitang ads para makakuha ng resources o in-app purchases.",
+
+    modPurposes:
+      "Ang updated na Mod Apk na ito ay nag-aalok ng walang hanggang pera na pwedeng gamitin ng mga players para sa iba't ibang layunin.",
+
+    modFeatures:
+      "Malalim na nagtrabaho ang mga developer sa antiban at no-ads features. Bukod pa rito, hindi na kailangan ng root para patakbuhin ang Mod version sa mga device.",
+
+    commentSus: "medyo nagtaka ako sa una pero tunay na apk",
+
+    commentUnlocked: "na-unlock pagkatapos i-download ang app, salamat",
+
+    commentWorked: "gumana sa akin. maghintay lang ng 1 minuto",
+
+    h3Reviews: "Mga Kamakailang Review ng Users",
+
+    videoInstruction:
+      "Panoorin ang aming step-by-step video guide para matuto kung paano mag-download at mag-install ng mod APK nang ligtas.",
+
+    h3videoInstruction: "Video Tutorial",
+
+    instructionInstall: "I-install ang application sa inyong phone",
+
+    instructionComplete: "Kumpletuhin ang mga kinakailangang aksyon",
+
+    instructionClick: "I-click ang Download button",
+
+    instructionSteps: "Upang ma-download ang file kailangan mong kumpletuhin ang tatlong simpleng hakbang:",
+
+    h3DownloadInstruction: "Mga Tagubilin sa Pag-download",
+
+    downloadButton: "Download",
   },
   es: {
-    steps: `<p style="padding: 0em 2em; margin: 0">
-Para descargar el archivo necesitas completar tres pasos sencillos. <br />
-1. Haz clic en el botón Descargar.<br />
-2. Completa las acciones requeridas.<br />
-3. Instala la aplicación en tu teléfono.
-</p>`,
+    h3AboutMod: "Acerca de este Mod",
     downloadBenefits: `Descarga el Mod Apk actualizado para:
 <ul>
 <li>desbloquear todos los niveles,</li>
@@ -299,6 +700,44 @@ Para descargar el archivo necesitas completar tres pasos sencillos. <br />
 <li>obtener recursos infinitos,</li>
 <li>eliminar anuncios.</li>
 </ul>`,
+    modDevelopers:
+      "Para facilitar las cosas, los desarrolladores han introducido una versión Mod que permite que todo sea ilimitado. ¿Para qué necesitas gastar dinero cuando todo lo que quieres es gratis?",
+
+    modResources:
+      "Elige entre la variedad de recursos para experimentar diversión. Desbloqueó todas las características permitiendo usar recursos ilimitados, que obtenemos en la versión Mod.",
+
+    modVersion:
+      "La versión Mod funciona correctamente sin anuncios y prohibiciones. No tendrás que soportar anuncios molestos para obtener recursos o compras dentro de la aplicación.",
+
+    modPurposes: "Este Mod Apk actualizado ofrece dinero ilimitado que los jugadores pueden usar para varios propósitos.",
+
+    modFeatures:
+      "Los desarrolladores han trabajado profundamente en las características anti-prohibición y sin anuncios. Además, no se necesita root para ejecutar la versión Mod en los dispositivos.",
+
+    commentSus: "al principio desconfié pero es un apk real",
+
+    commentUnlocked: "se desbloqueó después de descargar la app, gracias",
+
+    commentWorked: "me funcionó. solo espera 1 minuto",
+
+    h3Reviews: "Reseñas Recientes de Usuarios",
+
+    videoInstruction:
+      "Mira nuestra guía de video paso a paso para aprender cómo descargar e instalar el mod APK de forma segura.",
+
+    h3videoInstruction: "Tutorial en Video",
+
+    instructionInstall: "Instala la aplicación en tu teléfono",
+
+    instructionComplete: "Completa las acciones requeridas",
+
+    instructionClick: "Haz clic en el botón Descargar",
+
+    instructionSteps: "Para descargar el archivo necesitas completar tres pasos sencillos:",
+
+    h3DownloadInstruction: "Instrucciones de Descarga",
+
+    downloadButton: "Descargar",
   },
 };
 
